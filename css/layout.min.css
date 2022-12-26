@@ -1248,7 +1248,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .parallax-content {
-    padding-top   : 150px;
+    padding-top   : 100px;
     padding-bottom: 20px
 }
 
@@ -1582,4 +1582,17 @@ fieldset[disabled] .btn-theme {
 
 .gallery-body img {
     width: 90%;
+}
+
+.col-sm-8 {
+    width     : 100%;
+    margin-top: 20px;
+}
+
+.img-responsive {
+    margin: 0;
+}
+
+.parallax-content p {
+    color: #fff;
 }
