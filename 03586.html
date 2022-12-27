@@ -30,9 +30,11 @@
     <link rel="stylesheet" href="css/lightbox.css">
     <!-- THEME STYLES -->
     <link href="css/layout.min.css" rel="stylesheet" type="text/css" />
-
+    <link rel="stylesheet" href="css/comment.css" type="text/css" />
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" />
+    <!--Social Share-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <!-- END HEAD -->
 
@@ -100,10 +102,20 @@
     <!--========== PAGE LAYOUT ==========-->
 
     <!-- General Questions -->
+    <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+        <a href="#" class="google"><i class="fa fa-google"></i></a> 
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+      </div>
     <div class="content-lg container">
         <div class="row margin-b-20">
             <div class="col-sm-6">
                 <h2>読谷村の「むら咲むら」で開催中の「琉球ランタンフェスティバル」</h2>
+                <p>日付 :2022年12月27日 </p>
+                <p><a href="#">Admin</a> </p>
+                <hr>
             </div>
         </div>
         <!--// end row -->
@@ -140,9 +152,26 @@
         <!--// end row -->
     </div>
     <!-- End General Questions -->
-
+    <hr>
+    <!--Form Comment : Start-->
+    <div class="container1">
+        <form method="post" data-blog-id="{{id}}" onsubmit="return addComment()">
+          <label for="fname">お名前 :</label>
+          <input type="text" id="fname" name="name" placeholder="Your name..">
+      
+          <label for="lname">メール :</label>
+          <input type="text" id="lname" name="email" placeholder="Your email..">
+      
+          <label for="subject">案件 :</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Comment">
+        </form>
+      </div>
+    <!--Form Comment : End-->
+    <hr>
     <!--========== END PAGE LAYOUT ==========-->
-
+      
     <!--========== FOOTER ==========-->
     <footer class="footer">
         <!-- Links -->
