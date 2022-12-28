@@ -8,6 +8,27 @@
     padding-bottom  : 20px;
 }
 
+.fb-root {
+    border-radius   : 5px;
+    background-color: #f8f8f8;
+    padding         : 20px;
+    width           : 70%;
+    margin          : auto;
+    padding-bottom  : 20px;
+}
+
+.fb-like {
+    margin: 10px;
+}
+
+#fb-root {
+    text-align: center;
+}
+
+._42ef {
+    display: none;
+}
+
 input[type=text],
 select,
 textarea {
@@ -86,4 +107,16 @@ input[type=submit]:hover {
 .youtube {
     background: #bb0000;
     color     : white;
+}
+
+/*Visitor Count CSS*/
+.fa-eye {
+    color      : #515f51;
+    margin-left: 10px;
+    opacity    : 50%;
+    font-size  : 13px;
+}
+
+.fa-eye:hover {
+    color: #dd4b39;
 }

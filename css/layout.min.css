@@ -1566,7 +1566,7 @@ fieldset[disabled] .btn-theme {
 
 /*Image Gallery*/
 .gallery-img {
-    width          : 80%;
+    /* width          : 80%; */
     height         : auto;
     align-items    : center;
     justify-content: center;
@@ -1595,4 +1595,8 @@ fieldset[disabled] .btn-theme {
 
 .parallax-content p {
     color: #fff;
+}
+
+.blog-img img {
+    width: 380px;
 }

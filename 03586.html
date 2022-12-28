@@ -41,7 +41,9 @@
 <!-- BODY -->
 
 <body>
-
+    <!--Comment Fb Pics : Start-->
+    
+    <!--Comment Fb Pics : End-->
     <!--========== HEADER ==========-->
     <header class="header navbar-fixed-top">
         <!-- Navbar -->
@@ -114,7 +116,12 @@
             <div class="col-sm-6">
                 <h2>読谷村の「むら咲むら」で開催中の「琉球ランタンフェスティバル」</h2>
                 <p>日付 :2022年12月27日 </p>
-                <p><a href="#">Admin</a> </p>
+                <p><a href="#">Admin | </a> </p>
+                <i class="fa-solid fa-eye"></i>
+                <p id="count">0</p>
+                <p>Views</p>
+                <!-- <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="500" data-layout="standard" data-action="like" data-size="small" data-share="false"></div> -->
+                <p class="fb-like"></p>
                 <hr>
             </div>
         </div>
@@ -135,7 +142,13 @@
             </div>
 
             <div class="col-sm-4 col-sm-offset-1">
-                <img class="img-responsive" src="img/970x647/01.jpg" alt="Our Office">
+                <div class="gallery-img">
+                    <div class="gallery-body blog-img">
+                        <a href="img/970x647/01.jpg" data-lightbox="models" data-title="読谷村の「むら咲むら」で開催中の「琉球ランタンフェスティバル」">
+                            <img src="img/970x647/01.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="col-sm-8">
                 <div class="margin-b-30">
@@ -154,7 +167,12 @@
     <!-- End General Questions -->
     <hr>
     <!--Form Comment : Start-->
-    <div class="container1">
+    <div id="fb-root">
+        <div class="fb-comments" data-href="https://static.mychouchou.life" data-width="1265" data-numposts="5"></div>
+    </div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v15.0"
+        nonce="6cnyYJ6f"></script>
+    <!-- <div class="container1">
         <form method="post" data-blog-id="{{id}}" onsubmit="return addComment()">
           <label for="fname">お名前 :</label>
           <input type="text" id="fname" name="name" placeholder="Your name..">
@@ -167,7 +185,7 @@
       
           <input type="submit" value="Comment">
         </form>
-      </div>
+      </div> -->
     <!--Form Comment : End-->
     <hr>
     <!--========== END PAGE LAYOUT ==========-->
@@ -254,13 +272,16 @@
                         <!-- End List -->
                     </div>
                     <div class="col-sm-5 sm-margin-b-30">
-                        <h2 class="color-white">私たちにメモを送ってください</h2>
-                        <input type="text" class="form-control footer-input margin-b-20" placeholder="Name" required>
-                        <input type="email" class="form-control footer-input margin-b-20" placeholder="Email" required>
-                        <input type="text" class="form-control footer-input margin-b-20" placeholder="Phone" required>
-                        <textarea class="form-control footer-input margin-b-30" rows="6" placeholder="Message"
+                        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdwxZVKDNFpTY9c5vkE850YyUEfeQtMOWIv7_tQsVBiZ-eHmw/formResponse" method="post">
+                            <h2 class="color-white">私たちにメモを送ってください</h2>
+                        
+                        <input type="text" class="form-control footer-input margin-b-20" placeholder="Name" name="entry.707257001" required>
+                        <input type="email" class="form-control footer-input margin-b-20" placeholder="Email" name="entry.1497094746" required>
+                        <input type="text" class="form-control footer-input margin-b-20" placeholder="Phone" name="entry.1871597391" required>
+                        <textarea class="form-control footer-input margin-b-30" rows="6" placeholder="Message" name="entry.519588069"
                             required></textarea>
                         <button type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">送信</button>
+                        </form>
                     </div>
                 </div>
                 <!--// end row -->
@@ -305,6 +326,8 @@
     <script src="js/layout.min.js" type="text/javascript"></script>
     <script src="js/components/wow.min.js" type="text/javascript"></script>
 
+    <!--Count Vistor-->
+    <script src="js/countVistor.js"></script>
 </body>
 <!-- END BODY -->
 
